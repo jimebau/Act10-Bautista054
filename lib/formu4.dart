@@ -24,6 +24,9 @@ class _RegisterPageState extends State<Formulario4> {
   TextEditingController emailController = TextEditingController();
   TextEditingController mobileController = TextEditingController();
   TextEditingController addressController = TextEditingController();
+  TextEditingController direccionController = TextEditingController();
+  TextEditingController telefonoController = TextEditingController();
+  TextEditingController mailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,7 +103,7 @@ class _RegisterPageState extends State<Formulario4> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: direccionController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter direccion',
@@ -114,7 +117,7 @@ class _RegisterPageState extends State<Formulario4> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: telefonoController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter telefono',
@@ -128,7 +131,7 @@ class _RegisterPageState extends State<Formulario4> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: mailController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter email',
@@ -145,6 +148,9 @@ class _RegisterPageState extends State<Formulario4> {
                   print(emailController.text);
                   print(mobileController.text);
                   print(addressController.text);
+                  print(direccionController.text);
+                  print(telefonoController.text);
+                  print(mailController.text);
                 },
                 child: Text(
                   'Register',

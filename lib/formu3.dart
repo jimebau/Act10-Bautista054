@@ -24,6 +24,8 @@ class _RegisterPageState extends State<Formulario3> {
   TextEditingController emailController = TextEditingController();
   TextEditingController mobileController = TextEditingController();
   TextEditingController addressController = TextEditingController();
+  TextEditingController idprovedorController = TextEditingController();
+  TextEditingController almacenadosController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,7 +102,7 @@ class _RegisterPageState extends State<Formulario3> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: idprovedorController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter id provedor',
@@ -111,7 +113,7 @@ class _RegisterPageState extends State<Formulario3> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: almacenadosController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter almacenados',
@@ -126,6 +128,8 @@ class _RegisterPageState extends State<Formulario3> {
                   print(emailController.text);
                   print(mobileController.text);
                   print(addressController.text);
+                  print(idprovedorController.text);
+                  print(almacenadosController.text);
                 },
                 child: Text(
                   'Register',

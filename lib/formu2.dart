@@ -24,6 +24,10 @@ class _RegisterPageState extends State<Formulario2> {
   TextEditingController emailController = TextEditingController();
   TextEditingController mobileController = TextEditingController();
   TextEditingController addressController = TextEditingController();
+  TextEditingController telefonoController = TextEditingController();
+  TextEditingController rfcController = TextEditingController();
+  TextEditingController direccionController = TextEditingController();
+  TextEditingController sueldoController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,7 +104,7 @@ class _RegisterPageState extends State<Formulario2> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: telefonoController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter telefono',
@@ -114,7 +118,7 @@ class _RegisterPageState extends State<Formulario2> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: rfcController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter RFC',
@@ -128,7 +132,7 @@ class _RegisterPageState extends State<Formulario2> {
                 height: 3,
               ),
               TextField(
-                controller: addressController,
+                controller: direccionController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter direccion',
@@ -142,7 +146,7 @@ class _RegisterPageState extends State<Formulario2> {
                 height: 3,
               ),
               TextField(
-                controller: addressController,
+                controller: sueldoController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter sueldo',
@@ -159,6 +163,10 @@ class _RegisterPageState extends State<Formulario2> {
                   print(emailController.text);
                   print(mobileController.text);
                   print(addressController.text);
+                  print(telefonoController.text);
+                  print(rfcController.text);
+                  print(direccionController.text);
+                  print(sueldoController.text);
                 },
                 child: Text(
                   'Register',

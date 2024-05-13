@@ -24,6 +24,10 @@ class _RegisterPageState extends State<Formulario5> {
   TextEditingController emailController = TextEditingController();
   TextEditingController mobileController = TextEditingController();
   TextEditingController addressController = TextEditingController();
+  TextEditingController precioController = TextEditingController();
+  TextEditingController totalController = TextEditingController();
+  TextEditingController fechaventaController = TextEditingController();
+  TextEditingController idclienteController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,7 +104,7 @@ class _RegisterPageState extends State<Formulario5> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: precioController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter precio',
@@ -114,7 +118,7 @@ class _RegisterPageState extends State<Formulario5> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: totalController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter total',
@@ -128,7 +132,7 @@ class _RegisterPageState extends State<Formulario5> {
                 height: 3,
               ),
               TextField(
-                controller: addressController,
+                controller: fechaventaController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter fecha venta',
@@ -142,7 +146,7 @@ class _RegisterPageState extends State<Formulario5> {
                 height: 3,
               ),
               TextField(
-                controller: addressController,
+                controller: idclienteController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter id cliente',
@@ -159,6 +163,10 @@ class _RegisterPageState extends State<Formulario5> {
                   print(emailController.text);
                   print(mobileController.text);
                   print(addressController.text);
+                  print(precioController.text);
+                  print(totalController.text);
+                  print(fechaventaController.text);
+                  print(idclienteController.text);
                 },
                 child: Text(
                   'Register',

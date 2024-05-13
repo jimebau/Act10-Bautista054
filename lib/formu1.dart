@@ -24,6 +24,11 @@ class _RegisterPageState extends State<Formulario1> {
   TextEditingController emailController = TextEditingController();
   TextEditingController mobileController = TextEditingController();
   TextEditingController addressController = TextEditingController();
+  TextEditingController telefonoController = TextEditingController();
+  TextEditingController rfcController = TextEditingController();
+  TextEditingController calleController = TextEditingController();
+  TextEditingController cpController = TextEditingController();
+  TextEditingController coloniaController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -101,7 +106,7 @@ class _RegisterPageState extends State<Formulario1> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: telefonoController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter telefono',
@@ -115,7 +120,7 @@ class _RegisterPageState extends State<Formulario1> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: rfcController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter RFC',
@@ -129,7 +134,7 @@ class _RegisterPageState extends State<Formulario1> {
                 height: 5,
               ),
               TextField(
-                controller: addressController,
+                controller: calleController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter calle',
@@ -143,7 +148,7 @@ class _RegisterPageState extends State<Formulario1> {
                 height: 3,
               ),
               TextField(
-                controller: addressController,
+                controller: cpController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter CP',
@@ -157,7 +162,7 @@ class _RegisterPageState extends State<Formulario1> {
                 height: 3,
               ),
               TextField(
-                controller: addressController,
+                controller: coloniaController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Enter colonia',
@@ -174,6 +179,11 @@ class _RegisterPageState extends State<Formulario1> {
                   print(emailController.text);
                   print(mobileController.text);
                   print(addressController.text);
+                  print(telefonoController.text);
+                  print(rfcController.text);
+                  print(calleController.text);
+                  print(cpController.text);
+                  print(coloniaController.text);
                 },
                 child: Text(
                   'Register',
